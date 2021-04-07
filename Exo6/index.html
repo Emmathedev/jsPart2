@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Part2 - Exo6</title>
+</head>
+<body>
+    <!--onmouseover declenche un evenement sur la balise "img" appele la fonction "setNewImage()"-->
+    <img id="img1" onmouseover="setNewImage1()" onmouseout="setOldImage1()" src="../img/image1.jpg">
+    <img id="img2" onmouseover="setNewImage2()" onmouseout="setOldImage2()" src="../img/image2.jpg">
+    <img id="img3" onmouseover="setNewImage3()" onmouseout="setOldImage3()" src="../img/image3.jpg">
+    <img id="img4" onmouseover="setNewImage4()" onmouseout="setOldImage4()" src="../img/image4.jpg">
+    <img id="img5" onmouseover="setNewImage5()" onmouseout="setOldImage5()" src="../img/image5.jpg">
+
+    <script>
+        function setNewImage1(){
+            document.getElementById("img1").src ="../img/image1_2.jpg";
+        }
+       function setOldImage1(){
+            document.getElementById("img1").src ="../img/image1.jpg";
+         }
+        function setNewImage2(){
+            document.getElementById("img2").src ="../img/image2_2.jpg";
+        }
+        function setOldImage2(){
+            document.getElementById("img2").src ="../img/image2.jpg";
+         }
+         function setNewImage3(){
+            document.getElementById("img3").src ="../img/image3_2.jpg";
+        }
+        function setOldImage3(){
+            document.getElementById("img3").src ="../img/image3.jpg";
+         }
+         function setNewImage4(){
+            document.getElementById("img4").src ="../img/image4_2.jpg";
+        }
+        function setOldImage4(){
+            document.getElementById("img4").src ="../img/image4.jpg";
+         }
+         function setNewImage5(){
+            document.getElementById("img5").src ="../img/image5_2.jpg";
+        }
+        function setOldImage5(){
+            document.getElementById("img5").src ="../img/image5.jpg";
+         }
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Part2 - Exo1</title>
+</head>
+<body>
+    <!--onmouseover declenche un evenement sur la balise "img" appele la fonction "setNewImage()"-->
+    <img id="img1" onmouseover="setNewImage()"  src="../img/image1.jpg" width="300px">
+
+    <script>
+        function setNewImage()
+        {
+            document.getElementById("img1").src ="../img/image1_2.jpg";
+        }
+      /*  function setOldImage()
+        {
+            document.getElementById("img1").src ="../img/image1.jpg";
+        }*/
+    </script>
+</body>
+</html>

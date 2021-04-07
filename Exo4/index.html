@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Part2 - Exo3</title>
+</head>
+<body>
+  <form id="myForm">
+    <div>
+    <label for="">Votre nom:</label>
+    <input type="text" id="fname" value="DUFLOT">
+    </div>
+    <div>
+      <label for="">Votre prénom:</label>
+      <input type="text" id="lname" value="Emma">
+      </div>
+      <div>
+        <label for="">Votre ville:</label>
+        <input type="text" id="city" value="Paris">
+        </div>
+        <input type="button" onclick="myFunction()" value="RAZ">
+      </form>
+      <!--Ne pas oublier le type="button"-->
+
+<script type="text/javascript">
+
+function myFunction() {
+  document.getElementById("fname").value='';
+  document.getElementById("lname").value='';
+  document.getElementById("city").value='';
+}
+</script>
+
+</body>
+</html>

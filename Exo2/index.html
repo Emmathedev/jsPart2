@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Part2 - Exo2</title>
+</head>
+<body>
+    <div>
+    <label for="">Votre nom:</label>
+    <input type="text" id="Name" value="">
+    </div>
+
+<script type="text/javascript">
+
+var elem = document.getElementById("Name");
+
+elem.onblur = afficherMessage;
+
+function afficherMessage() {
+	alert("Vous etes hors de la zone!!!");
+}
+// Onblur sert à afficher une modale lorsque l'on sort de l'input
+
+
+//solution 2:
+// var lostFocusMessage = 'vous etes hors de la zone';
+// function displayMessage(){
+//    alert(lostFocusMessage);
+// }         
+// et mettre dans le html: onblur="displayMessage()"
+</script>
+</body>
+</html>
